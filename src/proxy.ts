@@ -8,4 +8,6 @@ export function proxy(request: NextRequest) {
     return middleware(request);
 }
 
+export const runtime = 'edge';
+
 export const config = {matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']};
